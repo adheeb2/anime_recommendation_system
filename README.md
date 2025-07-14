@@ -24,7 +24,6 @@ You can send a search query (e.g., `"dark fantasy revenge"`) and get back a list
 ```
 travel_recommendation_system/
 ├── app/
-│   ├── __init__.py
 │   ├── main.py              # FastAPI routes
 │   └── recommender.py       # TF-IDF + similarity logic
 ├── anime.csv                # Dataset (place it here or in /data)
