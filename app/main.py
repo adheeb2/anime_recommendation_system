@@ -1,6 +1,6 @@
 from fastapi import FastAPI,HTTPException
 from pydantic import BaseModel
-from recommender import recommend_anime
+from app.recommender import recommend_anime
 
 app = FastAPI()
 
