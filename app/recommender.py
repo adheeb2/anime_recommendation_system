@@ -3,7 +3,7 @@ import re
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
-df = pd.read_csv("/home/ubuntu/Downloads/anime.csv")
+df = pd.read_csv("/home/ubuntu/Desktop/projects/anime_recommendation_system/anime.csv")
 
 df = df.dropna(subset = ['genre'])
 df['type'] = df['type'].fillna('Unknown')
