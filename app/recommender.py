@@ -3,8 +3,9 @@ import re
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
-df = pd.read_csv("/home/ubuntu/Desktop/projects/anime_recommendation_system/anime.csv")
-
+import os
+# df = pd.read_csv("/home/ubuntu/Desktop/projects/anime_recommendation_system/anime.csv")
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), '..', 'anime.csv'))
 df = df.dropna(subset = ['genre'])
 df['type'] = df['type'].fillna('Unknown')
 df['rating'] = df['rating'].fillna(df['rating'].mean())
